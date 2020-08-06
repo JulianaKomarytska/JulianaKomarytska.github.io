@@ -51,7 +51,7 @@ const config = configFactory('production');
 const { checkBrowsers } = require('react-dev-utils/browsersHelper');
 checkBrowsers(paths.appPath, isInteractive)
   .then(() => {
-    // First, read the current file sizes in build directory.
+    // First, read the current file sizes in pokedex directory.
     // This lets us display how much they changed later.
     return measureFileSizesBeforeBuild(paths.appBuild);
   })
@@ -61,7 +61,7 @@ checkBrowsers(paths.appPath, isInteractive)
     fs.emptyDirSync(paths.appBuild);
     // Merge with the public folder
     copyPublicFolder();
-    // Start the webpack build
+    // Start the webpack pokedex
     return build(previousFileSizes);
   })
   .then(
@@ -128,7 +128,7 @@ checkBrowsers(paths.appPath, isInteractive)
     process.exit(1);
   });
 
-// Create the production build and print the deployment instructions.
+// Create the production pokedex and print the deployment instructions.
 function build(previousFileSizes) {
   // We used to support resolving modules according to `NODE_PATH`.
   // This now has been deprecated in favor of jsconfig/tsconfig.json
@@ -142,7 +142,7 @@ function build(previousFileSizes) {
     console.log();
   }
 
-  console.log('Creating an optimized production build...');
+  console.log('Creating an optimized production pokedex...');
 
   const compiler = webpack(config);
   return new Promise((resolve, reject) => {
