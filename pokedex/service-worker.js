@@ -6,15 +6,15 @@
  * See https://goo.gl/nhQhGp
  *
  * The rest of the code is auto-generated. Please don't update this file
- * directly; instead, make changes to your Workbox pokedex configuration
- * and re-run your pokedex process.
+ * directly; instead, make changes to your Workbox build configuration
+ * and re-run your build process.
  * See https://goo.gl/2aRDsh
  */
 
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/precache-manifest.ae8a8760f828b3b4f66f04678564727d.js"
+  "/precache-manifest.a45fb97c40b77ad4ecb8fe713f4a8b53.js"
 );
 
 self.addEventListener('message', (event) => {
